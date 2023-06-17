@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    /* margin-left: 250px; */
+    box-sizing: border-box;
+    font-family: Roboto;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.content {
+    margin-top: 100px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+    background: #e7f9fd;
+    box-shadow:  35px 35px 70px #cbdbdf,
+             -35px -35px 70px #ffffff;
+}
+h1 {
+    display: flex;
+    /* kết hợp flex để căn giữa */
+    justify-content: center;  
+
+    color: red;
+}
+h2 {
+    color: red;
+}
+h2 , .interact {
+    margin-top: 15px;
+    display: flex;
+    /* kết hợp flex để căn giữa */
+    justify-content: center;  
+    margin: auto;
+}
+
+.interact {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name, .password, button {
+    margin-top: 13px;
+}
+
+input {
+    background-color: #b1d2c8;
+}
+input:hover {
+    background-color: #aadfd2;
+}
+button {
+    margin: 15px auto auto auto;
+    width: 100px;
+
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #ebed8c;
+}
+
+.status {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+

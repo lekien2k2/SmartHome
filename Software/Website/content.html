@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+    <!-- roundSlider -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>                               
+    <link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />                               
+    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+    <!-- icon -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ĐỒ ÁN MÔN HỌC 1</h1>
+        <h2>SMART HOME</h2>
+        <div class="warning-soon"></div>
+    </header>
+    <div class="main">
+        <div class="row-1">
+            <div class="res-row-1"></div>
+
+            <div class="temp">
+                <div id="id-temp-round-slider" class="temp-round-slider"></div>
+            </div>
+            <div class="humid">
+                <div id="id-humid-round-slider" class="humid-round-slider"></div>
+            </div>
+
+            <div class="res-row-1"></div>
+        </div>
+
+        <div class="row-2">
+            <div class="res-row-2"></div>
+
+            <div class="lock">
+                <div class="lock-content">
+                    <h2>KHÓA CỬA</h2>
+                    <h3 class="lock-status">Trạng thái: 
+                        <span  id="id-status-lock" ></span>
+                    </h3>
+                    <h3 class="class-warning">
+                        <span id="id-warning">Cảnh báo:</span>
+                        <br>
+                        <span id="id-warning-lock"></span>
+                    </h3>
+                </div>              
+                <!-- <div class="img-warning"></div> -->
+            </div>
+
+            <div class="led">
+                <div class="led-slider">
+                    <input type="range" value="" min="0" max="255" id="id-led-slider">
+                </div>
+                <div class="img-led">
+                </div>
+            </div>
+
+            <div class="curtain">
+                <h2>RÈM CỬA</h2>
+                <h3>Trạng thái:
+                    <span class="message" style="color: green;"></span></h3>
+                    <!-- <br> -->
+                    <span id="id-retalk"></span>
+                    <br>
+                <ion-icon class="class-btnTalk"  id="btnTalk" name="mic-off-outline"></ion-icon>
+            </div>
+
+            <div class="res-row-2"></div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>Lê Tấn Kiên - 20139026</h2>
+        <h2>Nguyễn Hữu Thiết - 20139051</h2>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
